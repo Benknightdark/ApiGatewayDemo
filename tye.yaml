@@ -10,8 +10,8 @@
 
 # define multiple services here
 services:
-- name: api-gateway
-  project: ApiGateway\apigateway.csproj
+# - name: api-gateway
+#   project: ApiGateway\apigateway.csproj
 - name: api1
   project: api1\api1.csproj
 - name: api2
