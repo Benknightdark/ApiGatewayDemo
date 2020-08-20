@@ -14,8 +14,12 @@ services:
 #   project: ApiGateway\apigateway.csproj
 - name: api1
   project: api1\api1.csproj
+  bindings:
+  - port: 6379
 - name: api2
-  project: api2\api2.csproj  
+  project: api2\api2.csproj 
+  bindings:
+  - port: 6378 
   # project: app.csproj # msbuild project path (relative to this file)
   # executable: app.exe # path to an executable (relative to this file)
   # args: --arg1=3 # arguments to pass to the process
