@@ -33,6 +33,30 @@
                 "Put",
                 "Delete"
             ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                    {
+                        "Host": "localhost",
+                        "Port": 39573
+                    }
+                ],
+            "UpstreamPathTemplate": "/api1/{everything}",
+            "UpstreamHttpMethod": ["Get","Post", "Put", "Delete" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                    {
+                        "Host": "localhost",
+                        "Port": 37499
+                    }
+                ],
+            "UpstreamPathTemplate": "/api2/{everything}",
+            "UpstreamHttpMethod": ["Get","Post", "Put", "Delete" ]
         }
     ],
     "GlobalConfiguration": {

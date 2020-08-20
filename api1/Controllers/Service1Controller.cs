@@ -26,7 +26,7 @@ namespace api1.Controllers
        [HttpGet]
         public async Task<IActionResult> Get()
         {
-           return Ok("from service2");
+           return Ok("from service1");
         }
     }
 }
