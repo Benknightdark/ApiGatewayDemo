@@ -4,11 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using CutomApiLib.Middlewares;
 
 namespace api2.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+         [CustomResponseResult]
+
     public class Service2Controller : ControllerBase
     {
         private static readonly string[] Summaries = new[]

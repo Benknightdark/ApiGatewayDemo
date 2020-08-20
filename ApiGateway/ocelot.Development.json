@@ -44,11 +44,8 @@
                     }
                 ],
             "UpstreamPathTemplate": "/api1/{everything}",
-            "UpstreamHttpMethod": ["Get","Post", "Put", "Delete" ],
-            "AuthenticationOptions": {
-                "AuthenticationProviderKey": "TestKey",
-                "AllowedScopes": []
-            }
+            "UpstreamHttpMethod": ["Get","Post", "Put", "Delete" ]
+           
         },
         {
             "DownstreamPathTemplate": "/api/{everything}",
@@ -60,11 +57,8 @@
                     }
                 ],
             "UpstreamPathTemplate": "/api2/{everything}",
-            "UpstreamHttpMethod": ["Get","Post", "Put", "Delete" ],
-            "AuthenticationOptions": {
-                "AuthenticationProviderKey": "TestKey",
-                "AllowedScopes": []
-            }
+            "UpstreamHttpMethod": ["Get","Post", "Put", "Delete" ]
+            
         }
     ],
     "GlobalConfiguration": {
